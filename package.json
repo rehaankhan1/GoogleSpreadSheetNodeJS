@@ -1,11 +1,6 @@
 {
   "requires": true,
   "lockfileVersion": 1,
-  
-    "name": "coolnodeapp",
-    "version": "1.0.0",
-    "description": "node app ",
-    "main": "srvr.js",
     "scripts": {
     "start": "node srvr.js"
   },
