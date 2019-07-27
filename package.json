@@ -1,6 +1,9 @@
 {
   "requires": true,
   "lockfileVersion": 1,
+   "name": "demo",
+ "version": "1.0.0",
+ "main": "srvr.js",
     "scripts": {
     "start": "node srvr.js"
   },
