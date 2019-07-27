@@ -11,6 +11,25 @@
         "negotiator": "0.6.2"
       }
     },
+    {
+  "name": "coolnodeapp",
+  "version": "1.0.0",
+  "description": "node app ",
+  "main": "srvr.js",
+  "scripts": {
+  "start": "node srvr.js"
+},
+  "repository": {
+  "type": "git",
+  "url": ""
+},
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+  "url": ""
+},
+  "homepage": ""
+}
     "ajv": {
       "version": "6.10.2",
       "resolved": "https://registry.npmjs.org/ajv/-/ajv-6.10.2.tgz",
@@ -823,10 +842,7 @@
         "safe-buffer": "^5.0.1"
       }
     },
-    "scripts" : {
-      "test" : "echo bla bla",
-      "start" : "node srvr.js"
-    },
+   
     "tweetnacl": {
       "version": "0.14.5",
       "resolved": "https://registry.npmjs.org/tweetnacl/-/tweetnacl-0.14.5.tgz",
