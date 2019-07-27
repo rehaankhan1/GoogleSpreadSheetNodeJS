@@ -1,16 +1,27 @@
 {
-  "name": "sxcl",
+  "name": "gs",
   "version": "1.0.0",
-  "description": "",
+  "description": "this project",
   "main": "srvr.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-  "start": "node srvr.js"
+  "dependencies": {
+    "express": "^4.17.1",
+    "google-spreadsheet": "^2.0.7",
+    "hbs": "^4.0.0",
+    "uniq": "^1.0.1"
   },
-  "keywords": [],
+  "devDependencies": {},
+  "scripts": {
+    "test": "hello world",
+    "start": "node srvr.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rehaankhan1/GoogleSpreadSheetNodeJS.git"
+  },
   "author": "",
   "license": "ISC",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "bugs": {
+    "url": "https://github.com/rehaankhan1/GoogleSpreadSheetNodeJS/issues"
+  },
+  "homepage": "https://github.com/rehaankhan1/GoogleSpreadSheetNodeJS#readme"
 }
