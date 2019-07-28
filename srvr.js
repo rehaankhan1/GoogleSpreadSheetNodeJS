@@ -8,43 +8,10 @@ var creds = require('./client_secret.json');
 
 var doc = new GoogleSpreadsheet('1JIsAksQUxAFvwuUdOa_n9LDTulOgnkOQPo2_nMi85uQ');
 
+let ggf = ''
 
 
 
- 
- 
- 
- 
- let ggf = ''
-
-doc.useServiceAccountAuth(creds, function (err) {
-
- 
-
-    // Get all of the rows from the spreadsheet.
-  
-    doc.getRows(1, function (err, rows) {
-  
-  const info = rows.forEach((index,item) => {
-    //  console.log(`Candidate name is ${index.name}, and belongs to ${index.city}`)
-
-    
- ggf = ggf + `<h1>Candidate name is ${index.name}, and belongs to ${index.city}</h1>`
-
-     
-
-  })
-      //console.log(rows[0].name)
-  
-    });
-  
-  });
- 
- 
- 
- 
- 
- 
 
 
 
@@ -106,31 +73,58 @@ app.get('/create', function(req, res) {
 app.get('/', (req,res) => {
     
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
     
+ggf = ''
+
+  doc.useServiceAccountAuth(creds, function (err) {
+
+ 
+
+    // Get all of the rows from the spreadsheet.
+  
+    doc.getRows(1, function (err, rows) {
+  
+  const info = rows.forEach((index,item) => {
+      console.log(`Candidate name is ${index.name}, and belongs to ${index.city}`)
+
+    
+ ggf = ggf + `<h1>Candidate name is ${index.name}, and belongs to ${index.city}</h1>`
+
+     
+
+  })
   res.render('home.hbs', {
-      pageTitle: ggf 
-     // welcomeMessage: index.city
+    pageTitle: ggf 
+   // welcomeMessage: index.city
+  
+})
+      //console.log(rows[0].name)
+  
+    });
+  
     
- })
+
+
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
 
 
 })
@@ -140,11 +134,42 @@ app.get('/open', (req,res) => {
     
 
     
-  res.render('home.hbs', {
-      pageTitle: ggf 
-     // welcomeMessage: index.city
+ 
     
- })
+ggf = ''
+
+doc.useServiceAccountAuth(creds, function (err) {
+
+
+
+  // Get all of the rows from the spreadsheet.
+
+  doc.getRows(1, function (err, rows) {
+
+const info = rows.forEach((index,item) => {
+    console.log(`Candidate name is ${index.name}, and belongs to ${index.city}`)
+
+  
+ggf = ggf + `<h1>Candidate name is ${index.name}, and belongs to ${index.city}</h1>`
+
+   
+
+})
+res.render('home.hbs', {
+  pageTitle: ggf 
+ // welcomeMessage: index.city
+
+})
+    //console.log(rows[0].name)
+
+  });
+
+  
+
+
+});
+
+
 
 
 })
