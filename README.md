@@ -40,7 +40,7 @@ We are using express, google spreadsheet, handlebars
 
      ```bash
 	npm install express --save
-	npm install googleapis@39 –save
+	npm install googleapis@39  --save
 	npm i google-spreadsheet
 	npm install hbs
 	```
