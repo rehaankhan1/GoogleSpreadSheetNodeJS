@@ -47,7 +47,7 @@ We are using express, google spreadsheet, handlebars
 
 now we are using –save extension as it will add this dependency in package.json
 now we will create two folders where the public folder will store our local javascript file that will work with DOM elements and in views, we will store our handlebar file since we are using the express framework.
-Now, we will create a handlebar file named as home. has in public folder
+Now, we will create a handlebar file named as home.hbs in public folder
 
 
 
